@@ -1,0 +1,16 @@
+# Ignore Model Checkpoints
+checkpoints/
+*.pt
+*.pth
+
+# Ignore Data
+data/
+*.npy
+*.flac
+*.wav
+
+# Ignore Logs and System files
+logs/
+__pycache__/
+*.pyc
+.DS_Store

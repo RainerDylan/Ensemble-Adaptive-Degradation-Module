@@ -13,11 +13,9 @@ from tqdm import tqdm
 import json
 from datetime import datetime
 
-# Add src to path to correctly find modules
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
-from src.dataset import create_dataloaders
-from src.models.simple_cnn import SimpleCNN
+from src.data.dataset import create_dataloaders
+from src.models.res2net import Res2Net
+from src.models.aasist import AASIST
 
 def calculate_eer(labels, scores):
     """Calculate Equal Error Rate (EER)"""
@@ -112,7 +110,7 @@ def train(config):
         return None, None
 
     print("\nInitializing model...")
-    model = SimpleCNN(dropout_rate=config['dropout_rate']).to(device)
+    model = AASIST().to(device)
     
     class_weights = class_weights.to(device)
     criterion = nn.CrossEntropyLoss(weight=class_weights)
