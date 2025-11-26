@@ -146,7 +146,7 @@ def main():
     # --- CONFIGURATION WITH YOUR PATHS ---
     config = {
         # Updated to match your project structure
-        'train_dir': r'D:\SAMPOERNA\Semester 7\Capstone\Ensemble-Adaptive-Degradation-Module\data\processed\train',
+        'train_dir': r'D:\SAMPOERNA\Semester 7\Capstone\Ensemble-Adaptive-Degradation-Module\data\processed\train_raw',
         'val_dir': None,
         'dropout_rate': 0.3,
         'batch_size': 16, # Reduced batch size to be safe

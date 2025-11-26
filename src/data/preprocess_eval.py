@@ -7,7 +7,7 @@ import sys
 # Add src to path to find modules
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from preprocessing import AudioPreprocessor
+from src.data.preprocess import AudioPreprocessor
 
 def main():
     preprocessor = AudioPreprocessor()
