@@ -1,27 +1,25 @@
 # Core deep learning
-torch==2.1.0
-torchaudio==2.1.0
+torch
+torchaudio
+tensorboard
 
 # Audio processing
-librosa==0.10.1
-soundfile==0.12.1
+librosa
+soundfile
 
 # Scientific computing
-numpy==1.24.3
-scipy==1.11.3
+numpy
+scipy
 
 # Data handling
-pandas==2.0.3
+pandas
 
 # Visualization
-matplotlib==3.7.2
-seaborn==0.12.2
+matplotlib
+seaborn
 
 # Progress bars
-tqdm==4.66.1
+tqdm
 
 # Configuration management
-pyyaml==6.0.1
-
-# Experiment tracking (optional for now)
-# wandb==0.15.12
+pyyaml
