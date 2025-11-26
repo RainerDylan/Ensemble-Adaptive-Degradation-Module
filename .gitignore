@@ -1,16 +1,15 @@
-# Ignore Model Checkpoints
-checkpoints/
-*.pt
-*.pth
+# Ignore Virtual Environment
+venv/
+env/
+.env
 
-# Ignore Data
-data/
-*.npy
-*.flac
-*.wav
-
-# Ignore Logs and System files
-logs/
+# Ignore Python cache
 __pycache__/
 *.pyc
-.DS_Store
+
+# Ignore Data & Models (Large files)
+checkpoints/
+data/
+*.pt
+*.npy
+*.flac

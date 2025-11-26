@@ -6,6 +6,7 @@ class Bottle2neck(nn.Module):
     def __init__(self, inplanes, planes, stride=1, scale=4):
         super(Bottle2neck, self).__init__()
         width = int(math.floor(planes * (scale - 1) / scale))
+        # Downsample happens here in conv1
         self.conv1 = nn.Conv2d(inplanes, width * scale, kernel_size=1, stride=stride, bias=False)
         self.bn1 = nn.BatchNorm2d(width * scale)
         self.nums = scale - 1
